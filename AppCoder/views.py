@@ -26,6 +26,11 @@ def inicio(request):
 def terminos(request):
     return render(request, 'AppCoder/terminos.html')
 
+
+
+def privacy(request):
+    return render(request, 'AppCoder/privacy.html')
+
 def buscar(request):
     codigo_views=request.GET['codigo']
     cursos_todos=Curso.objects.filter(codigo=codigo_views)

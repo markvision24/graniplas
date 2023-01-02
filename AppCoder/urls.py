@@ -21,7 +21,7 @@ urlpatterns = [
     
     
     path('terminos/', views.terminos, name="Terminos"),
-    
+    path('privacy/', views.privacy, name="Privacy"),
     
     #crud graniplas
     path('curso/list/', views.CursoList.as_view(),name='List'),
