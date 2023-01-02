@@ -1,0 +1,21 @@
+{% extends "AppCoder/padre.html"%}
+
+{% load static%}
+
+{% block contenidoQueCambia%}
+
+    
+    <br>
+    Empleados:
+    Cedula:{{empleados.Cedula}}
+    {%for empleados in empleadoss%}
+        
+    Nombres: {{empleados.Nombres}}
+    Apellidos: {{empleados.Apellidos}}
+    Cargo: {{empleados.Cargo}}
+    Año_Nacimiento: {{empleados.Año_Nacimiento}}
+    RH: {{empleados.RH}}
+        <br>
+    {%endfor%}
+
+{% endblock %}

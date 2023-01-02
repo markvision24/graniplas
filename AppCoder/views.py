@@ -39,13 +39,13 @@ def buscar(request):
 def buscarpintu(request):
     codigo_views=request.GET['codigo_2']
     cursoss_todoss=Pintura.objects.filter(codigo_2=codigo_views)
-    return render(request,"AppCoder/resultadoCurso.html",{"codigo_2":codigo_views,"pinturas":cursoss_todoss})
+    return render(request,"AppCoder/resultadoPintura.html",{"codigo_2":codigo_views,"pinturas":cursoss_todoss})
 
 
 def buscarempleado(request):
     Cedula_views=request.GET['Cedula']
     cursosss_todoss=Empleados.objects.filter(Cedula=Cedula_views)
-    return render(request,"AppCoder/resultadoCurso.html",{"codigo_2":Cedula_views,"empleadoss":cursosss_todoss})
+    return render(request,"AppCoder/resultadoEmpleado.html",{"Cedula":Cedula_views,"empleadoss":cursosss_todoss})
 
 
 def buscarcurso(request):

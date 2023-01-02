@@ -1,0 +1,48 @@
+{% extends "AppCoder/padre.html"%}
+
+{% load static%}
+
+{% block contenidoQueCambia%}
+       
+    
+        codigo_2:{{codigo_2}}
+    
+    pinturas:
+    {%for pintura in pinturas%}
+    Nombre_Titanio: {{pintura.Nombre_Titanio_2}}
+    Titanio: {{pintura.Titanio_2}}
+    Nombre_Amarillo_Bayer: {{pintura.Nombre_Amarillo_Bayer_2}}
+    Amarillo_Bayer: {{pintura.Amarillo_Bayer_2}}
+    Nombre_Amarillo_Vivo: {{pintura.Nombre_Amarillo_Vivo_2}}
+    Amarillo_Vivo: {{pintura.Amarillo_Vivo_2}}
+    Nombre_Amarillo_AL90: {{pintura.Nombre_Amarillo_AL90_2}}
+    Amarillo_AL90: {{pintura.Amarillo_AL90_2}}
+    Nombre_Azul: {{pintura.Nombre_Azul_2}}
+    Azul: {{pintura.Azul_2}}
+    Nombre_Rojo_Bayer: {{pintura.Nombre_Rojo_Bayer_2}}
+    Rojo_Bayer: {{pintura.Rojo_Bayer_2}}
+    Nombre_Rojo_Vivo: {{pintura.Nombre_Rojo_Vivo_2}}
+    Rojo_Vivo: {{pintura.Rojo_Vivo_2}}
+    Nombre_Negro: {{pintura.Nombre_Negro_2}}
+    Negro: {{pintura.Negro_2}}
+    Nombre_Tinta_Azul: {{pintura.Nombre_Tinta_Azul_2}}
+    Tinta_Azul: {{pintura.Tinta_Azul_2}}
+    Nombre_Tinta_Verde: {{pintura.Nombre_Tinta_Verde_2}}
+    Tinta_Verde: {{pintura.Tinta_Verde_2}}
+    Nombre_Tinta_Roja: {{pintura.Nombre_Tinta_Roja_2}}
+    Tinta_Roja: {{pintura.Tinta_Roja_2}}
+    Nombre_Tinta_Violeta: {{pintura.Nombre_Tinta_Violeta_2}}
+    Tinta_Violeta: {{pintura.Tinta_Violeta_2}}
+    Nombre_Tinta_Fucsia: {{pintura.Nombre_Tinta_Fucsia_2}}
+    Tinta_Fucsia: {{pintura.Tinta_Fucsia_2}}
+    Agua: {{pintura.Agua_2}}
+    Resina: {{pintura.Resina_2}}
+    Talco: {{pintura.Talco_2}}
+    Celulosa: {{pintura.Celulosa_2}}
+    AntiBacterial: {{pintura.AntiBacterial_2}}
+    AntiEspumante: {{pintura.AntiEspumante_2}}
+        <br>
+    {%endfor%}
+
+
+{% endblock %}
