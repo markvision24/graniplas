@@ -1,0 +1,24 @@
+{% extends "AppCoder/padre.html"%}
+
+{% load static%}
+
+{% block contenidoQueCambia%}
+
+
+    <form action="/AppCoder/buscar/"  method="get">{% csrf_token %}     
+        <input type="number" name="codigo" id="codigo">  
+        <input type="submit" value="Buscar Graniplas">
+    </form>
+
+    <form action="/AppCoder/buscarpintu/"  method="get">{% csrf_token %}     
+        <input type="number" name="codigo_2" id="codigo_2">  
+        <input type="submit" value="Buscar Pintura">
+    </form>
+
+    <form action="/AppCoder/buscarempleado/"  method="get">{% csrf_token %}     
+        <input type="number" name="Cedula" id="Cedula">  
+        <input type="submit" value="Buscar empleado">
+    </form>
+
+{% endblock %}
+

@@ -1,0 +1,17 @@
+{% extends "AppCoder/padre.html"%}
+
+{% load static%}
+
+{% block contenidoQueCambia%}
+
+
+Cedula: {{empleados.Cedula}}
+Nombres: {{empleados.Nombres}}
+Apellidos: {{empleados.Apellidos}}
+Cargo: {{empleados.Cargo}}
+Año_Nacimiento: {{empleados.Año_Nacimiento}}
+RH: {{empleados.RH}}
+
+<a href="{%url 'List2'%}">Regresar</a>
+
+{% endblock %}

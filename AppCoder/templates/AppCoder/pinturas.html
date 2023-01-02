@@ -1,0 +1,29 @@
+{% extends "AppCoder/padre.html"%}
+
+{% load static%}
+
+{% block contenidoQueCambia%}
+
+
+    <!--Aqui va lo que cambia, y lo asociado a esta vista :) -->
+    <h1>Pintura</h1>
+    <p>Aqui va las formulas para preparar Pintura</p>
+
+    <p>
+        
+    </p>
+
+    <p>Ingrese una formula</p>
+    <form action=""  method="post">{% csrf_token %}
+        <table>
+            {{miFormulari.as_table}}
+        </table>
+        <input type="submit",value="Enviar">
+    </form>
+    <h1>Lista de Pinturas</h1>
+    <p>Aqui va a buscar la lista de las formulas de <a href="{% url 'List3' %}">PINTURAS</a>
+    </p>
+    <p>
+    </p>
+
+{% endblock %}

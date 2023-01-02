@@ -1,0 +1,26 @@
+{% extends "AppCoder/padre.html"%}
+
+{% load static%}
+
+{% block contenidoQueCambia%}
+    
+
+    <ul>
+
+        {% for pintura in object_list%}
+            <p>{{pintura.codigo_2}}</p>
+
+
+
+
+            
+            <p>
+                <a href="{% url 'Detail3' pintura.id %}">Ver</a>
+                <a href="{% url 'Edit3' pintura.id %}">Editar</a>
+                <a href="{% url 'Delete3' pintura.id %}">Borrar</a>
+            </p>
+        {% endfor %}
+    </ul>
+
+    <a href="{%url 'Pintura'%}">Regresar</a>
+{% endblock %}

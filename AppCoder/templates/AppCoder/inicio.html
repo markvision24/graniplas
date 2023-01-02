@@ -1,0 +1,224 @@
+{% extends "AppCoder/padre.html"%}
+
+{% load static%}
+
+{% block contenidoQueCambia%}
+   
+
+
+    <!--Aqui va lo que cambia, y lo asociado a esta vista :) -->
+   <h1>Inicio</h1>
+   <p>A continuacion estaremos realizando una descripcion de nuestra compañia.</p>
+   <div class="about">
+      <div class="container-fluid">
+         <div class="row d_flex">
+            <div class="col-md-7">
+               <div class="titlepage">
+                  
+                  <h2>Sobre Nuestra Compañia</h2>
+                  <span>Graniplas C.A es Empresa Dedicada a Fabricar pinturas, grafiado,
+                     marmolplast, revestimiento para paredes entre otros. Su principal función es
+                     la fabricación de dichos productos por lo cual conoce su importancia del
+                     capital humano y establece dentro de sus prioridades la implementación y
+                     mejoramiento continuo de un sistema de gestión de seguridad y salud en el
+                     trabajo el cual va encaminado a velar por el completo bienestar fisico, mental
+                     y social de los trabajadores ya que se encarga de preparar, almacenar y
+                     trasportar productos de materiales para el revestimiento de paredes en el interior y exterior.</span>
+                     
+                     <h2>Objetivo General</h2>
+                     <span>Fabricar y distribuir en forma segura y cuidando el medio ambiente,
+                        productos con calidad para satisfacerlas necesidades de los clientes de la
+                        Empresa Graniplas C.A ubicada en la parroquia EL Carmen Municipio
+                        Barinas Estado Barinas.</span>
+                     <h2>Objetivo Especifico</h2>
+                     <span>1.Fabricar Productos atractivos, útiles y de alta calidad que cumplan las
+                        necesidades del cliente. </n> 
+                        </span>
+                     <br>
+                     <span>2.Proporcionar pautas Y procedinientos para el almacenamiento de la
+                        materia prima y cuidado de los empleados e instalaciones de la
+                        Empresa Graniplas C.A. </n></span>
+                     <br>
+                     <span>
+                        3.Maximizar el rendimiento y desempeño de la labor, logrando elevar la
+                        eficiencia y eficacia, al implementar sencillos cambios en el área
+                        productiva.</span>
+                     <h2>Visión</h2>
+                     <span>Proporcionara nuestros clientes servicios de comercialización de todo
+                        tipo de revestimiento para paredes a nivel nacional, usando la mejor calidad
+                        en cuanta materia prima, tecnologia y personal altamente calificado.</span>
+                     <h2>Misión de la Empresa</h2>
+                     <span>Fabricar y comercializar productos y servicios para el mercado de la
+                        construcción con calidad, garantia y un servicio cálido, oportuno, trabajando
+                        permanentemente para satistacer las necesidades de los clientes, con un
+                        equipo humano calificado y apasionado, apoyado en soluciones tecnológicas
+                        y sistemas de información, fomentando el bienestar de sus empleados
+                        clientes, proveedores y accionistas.</span>
+               </div>
+            </div>
+            <div class="col-md-5">
+               <div class="about_img">
+                  <figure><img src="{%static 'AppCoder/images/about.jpg'%}" alt="#"/></figure>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--trabajos realizados :) -->
+   
+
+   <head>
+      
+      <title>Slider en Bootstrap</title>
+      <meta name="viewport" content="initial-scale=1.0">
+      <meta charset="utf-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <center><h2>Trabajos realizados</h2></center>
+      <center><p>A continuacion mostraremos algunos de los trabajos realizados por nuestro personal de mano de obra calificada</p></center>
+      <center>
+      <div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel" style="width:50%">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="{%static 'AppCoder/images/img1.jpeg'%}" alt="First Slide">
+            <div class="carousel-caption">
+              <h3>GRANIPLAS C.A.</h3>
+              <p>J-29747688-1</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{%static 'AppCoder/images/img2.jpeg'%}" alt="Second Slide">
+            <div class="carousel-caption">
+              <h3>GRANIPLAS C.A.</h3>
+              <p>J-29747688-1</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{%static 'AppCoder/images/img3.jpeg'%}" alt="Third Slide">
+            <div class="carousel-caption">
+              <h3>GRANIPLAS C.A.</h3>
+              <p>J-29747688-1</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{%static 'AppCoder/images/img4.jpeg'%}" alt="Third Slide">
+            <div class="carousel-caption">
+              <h3>GRANIPLAS C.A.</h3>
+              <p>J-29747688-1</p>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        </center>
+      </div>
+    </body>
+
+
+
+
+
+   <!--personal experto :) -->
+
+   <div class="staff_main">
+      <div class="container_staff">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <center><h2>Nuestro Personal Experto</h2></center>
+                  <span> </span>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+               <div class="staff">
+                  <div class="man">
+                     <i><img src="{%static 'AppCoder/images/min.jpeg'%}" alt="#"/></i>
+                  </div>
+                  <div class="social_icon_main">
+                     <h4>Luz Mary Poveda</h4>
+                     <ul class="social_icon_staff text_align_center  ">
+                        <li><a href="https://www.facebook.com/luzm.poveda?mibextid=ZbWKwL"><i class="fa fa-facebook" aria-hidden="true">acebook</i></a></li>
+                       
+                        <li><a href="https://instagram.com/luz0724?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram" aria-hidden="true">Instagram</i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+               <div class="staff">
+                  <div class="men">
+                     <i><img src="{%static 'AppCoder/images/men.jpeg'%}" alt="#"/></i>
+                  </div>
+                  <div class="social_icon_main">
+                     <h4>Alexander Suescun</h4>
+                     <ul class="social_icon_staff text_align_center  ">
+                        <li><a href="https://www.facebook.com/alex.suescunpoveda?mibextid=ZbWKwL"><i class="fa fa-facebook" aria-hidden="true">acebook</i></a></li>
+                       
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true">Instagram</i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+               <div class="staff">
+                  <div class="man">
+                     <i><img src="{%static 'AppCoder/images/maan.jpeg'%}" alt="#"/></i>
+                  </div>
+                  <div class="social_icon_main">
+                     <h4>Holmer Suescun</h4>
+                     <ul class="social_icon_staff text_align_center  ">
+                        <li><a href="https://www.facebook.com/Suescunp?mibextid=ZbWKwL"><i class="fa fa-facebook" aria-hidden="true">acebook</i></a></li>
+                        <li><a href="https://instagram.com/arley_suescun?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram" aria-hidden="true">Instagram</i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+               <div class="staff">
+                  <div class="man">
+                     <i><img src="{%static 'AppCoder/images/man.png'%}" alt="#"/></i>
+                  </div>
+                  <div class="social_icon_main">
+                     <h4>Joel Coronel</h4>
+                     <ul class="social_icon_staff text_align_center  ">
+                        <li><a href="https://www.facebook.com/josue.gil.14289?mibextid=ZbWKwL"><i class="fa fa-facebook" aria-hidden="true">acebook</i></a></li>
+                        <li><a href="https://instagram.com/joeljosuecoro?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram" aria-hidden="true">Instagram</i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 padding_left0">
+               <div class="map_main">
+                  <div class="map-responsive">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d293.1886909603836!2d-70.21894971905786!3d8.628488220931645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e7b5838ef26e305%3A0xdda7dcce0622d99d!2sGraniplas%20C.A.%20Barinas%205201!5e0!3m2!1ses-419!2sco!4v1669846648867!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+              
+
+{% endblock %}
