@@ -22,7 +22,6 @@ def inicio(request):
 
 
 
-
 def terminos(request):
     return render(request, 'AppCoder/terminos.html')
 
